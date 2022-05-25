@@ -12,4 +12,4 @@ const UserSchema: Schema = new Schema({
 var User = mongoose.model('User', UserSchema);
 declare var module: any;
 
-(module).exports = User
+export default User
