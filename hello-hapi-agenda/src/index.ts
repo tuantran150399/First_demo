@@ -1,8 +1,7 @@
-const Agenda = require('agenda');
-var createError = require('http-errors');
-var express = require('express');
-var app = express();
-var mongoose = require('mongoose');
+import { Agenda } from "agenda";
+
+
+import mongoose  from "mongoose";
 const connectionString = 'mongodb://localhost:27017/Agenda';
 async function run() {
     await mongoose.connect(connectionString, { keepAlive: true, keepAliveInitialDelay: 300000 }).then(()=>
@@ -32,9 +31,3 @@ async function run() {
 
 }
 run()
-const port = 8080
-app.listen(port, () => console.log(
-    
-  `Express started on http://localhost:${port}; ` +
-  
-  `press Ctrl-C to terminate. `))

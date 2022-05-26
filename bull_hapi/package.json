@@ -1,0 +1,23 @@
+{
+  "name": "bull_hapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "zindex.js",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts",
+    "build": "tsc",
+    "start": "node dist"
+  },
+  "author": "anhtuan",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.2",
+    "bull": "^4.8.3",
+    "ts-node-dev": "^2.0.0-0"
+  },
+  "devDependencies": {
+    "@bull-board/hapi": "^3.11.0",
+    "@types/bull": "^3.15.8",
+    "@types/hapi__hapi": "^20.0.12"
+  }
+}
